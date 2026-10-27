@@ -133,6 +133,49 @@ h1 span {
     line-height: 1.6;
 }
 
+.heroActions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 36px;
+}
+
+.button {
+    display: inline-flex;
+    min-height: 52px;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 24px;
+    border: 2px solid #E3B575;
+    border-radius: 4px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 160ms ease, color 160ms ease, transform 160ms ease;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+.buttonPrimary {
+    background-color: #E3B575;
+    color: #042E42;
+}
+
+.buttonPrimary:hover {
+    background-color: #FFE7BC;
+    border-color: #FFE7BC;
+}
+
+.buttonSecondary {
+    color: #FFFFFF;
+}
+
+.buttonSecondary:hover {
+    background-color: #E3B575;
+    color: #042E42;
+}
+
 .heroImage {
     flex: 1 1 40%;
     display: flex;
@@ -322,6 +365,15 @@ footer .footerPhone:hover {
     .heroImage {
         justify-content: center;
         transform: none;
+    }
+
+    .heroActions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .button {
+        width: 100%;
     }
 
     .Prestation {
